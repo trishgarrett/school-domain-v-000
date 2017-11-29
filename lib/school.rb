@@ -26,7 +26,7 @@ class School
   def sort
 #binding.pry
     sorted_roster = roster.sort_by {|grade| grade}
-    sort_a_roster = sorted_roster.sort_by {|student_name| student_name}
+    sort_a_roster = sorted_roster.sort_by {|grade, student_name| student_name}
 binding.pry
 
   end
