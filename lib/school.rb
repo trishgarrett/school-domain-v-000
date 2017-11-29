@@ -23,7 +23,7 @@ class School
 
   def sort
     @roster = roster.sort_by {|grade, name| grade}
-    @roster.sort_by {|name| name.downcase}
+    
 
   end
 end
