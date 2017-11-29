@@ -1,5 +1,5 @@
 # code here!
-require pry
+require 'pry'
 
 class School
   attr_accessor :roster, :student_name, :grade, :roster
