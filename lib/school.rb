@@ -1,4 +1,6 @@
 # code here!
+require pry
+
 class School
   attr_accessor :roster, :student_name, :grade, :roster
   attr_reader :school_name
@@ -22,6 +24,7 @@ class School
   end
 
   def sort
+    binding.pry
     @roster = roster.sort_by {|grade, name| grade}
     
 
