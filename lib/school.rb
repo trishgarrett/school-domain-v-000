@@ -25,7 +25,7 @@ class School
 
   def sort
     binding.pry
-    @roster = roster.sort_by {|grade, name| grade}
+    @roster = roster.sort_by {|grade| grade.downcase}
 
 
   end
