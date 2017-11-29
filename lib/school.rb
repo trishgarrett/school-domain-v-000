@@ -24,10 +24,10 @@ class School
   end
 
   def sort
-    
+
     @roster = roster.sort_by {|grade, student_name| grade}
     @roster.sort_by {|student_name |student_name}
-
+binding.pry
 
   end
 end
