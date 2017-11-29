@@ -26,7 +26,7 @@ class School
   def sort
 
     @roster = roster.sort_by {|grade, student_name| grade}
-    sort_a_roster = @roster.sort_by {|student_name |student_name}
+    sort_a_roster = @roster.sort_by {|student_name| student_name}
 binding.pry
 
   end
