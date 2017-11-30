@@ -24,10 +24,9 @@ class School
   end
 
   def sort
-#binding.pry
     sorted_roster = roster.sort_by {|grade| grade}
-    #sorted_roster = sorted_roster.each {|grade| grade.sort_by {|student_name| student_name}}
-#binding.pry
-
+    sorted_roster = sorted_roster.each do |classroom| 
+      classroom[1].sort_by! { |student_name| student_name }
+    end
   end
 end
