@@ -29,7 +29,7 @@ class School
       classroom[1].sort_by! { |student_name| student_name }
 
     new_roster = {}
-    new_roster << grade
+    roster << grade
     end
   end
 end
