@@ -28,7 +28,7 @@ class School
     sorted_roster = sorted_roster.each do |classroom|
       classroom[1].sort_by! { |student_name| student_name }
 
-    sorted_roster.to_h
+    sorted_roster.to_h.flatten
     end
   end
 end
