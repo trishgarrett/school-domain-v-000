@@ -28,7 +28,7 @@ class School
     sorted_roster = sorted_roster.each do |classroom|
       classroom[1].sort_by! { |student_name| student_name }
 
-    new_roster = {}
+    roster = {}
     roster << grade
     end
   end
