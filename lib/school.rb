@@ -26,7 +26,7 @@ class School
   def sort
     sorted_roster = roster.sort_by {|grade| grade}
     sorted_roster = sorted_roster.each do |classroom|
-    new_roster = classroom[1].sort_by! { |student_name| student_name }
+      classroom[1].sort_by! { |student_name| student_name }
     end
   end
 end
