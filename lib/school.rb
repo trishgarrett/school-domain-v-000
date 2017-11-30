@@ -28,7 +28,7 @@ class School
     sorted_roster = sorted_roster.each do |classroom|
     new_roster = classroom[1].sort_by! { |student_name| student_name }
 
-    hash << new_roster
+    new_roster.to_h
     end
   end
 end
